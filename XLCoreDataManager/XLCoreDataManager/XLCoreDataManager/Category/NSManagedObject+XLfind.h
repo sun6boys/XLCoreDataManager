@@ -29,6 +29,6 @@
 + (NSArray*)findByAttribute:(NSString *)attribute withValue:(id)searchValue BySorted:(NSString*)sortTerm ascending:(BOOL)ascending;
 
 //根据自定义条件查询
-+ (NSArray*)findByPredicateFormat:(NSString*)predicateFormat;
++ (NSArray*)findByPredicate:(NSPredicate*)predicate;
 
 @end

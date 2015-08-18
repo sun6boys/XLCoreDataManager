@@ -21,5 +21,5 @@
 
 +(NSFetchRequest*)createFetchRequestByAttribute:(NSString*)attribute withValue:(id)searchValue;
 
-+(NSFetchRequest*)createFetchRequestByPredicateFormat:(NSString*)predicateFormat;
++(NSFetchRequest*)createFetchRequestByPredicate:(NSPredicate*)predicate;
 @end

@@ -18,6 +18,8 @@
 		0F4D8F4B1B833CEC0031E38F /* NSManagedObject+XLfind.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D8F461B833CEC0031E38F /* NSManagedObject+XLfind.m */; };
 		0F4D8F4C1B833CEC0031E38F /* NSManagedObject+XLKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D8F481B833CEC0031E38F /* NSManagedObject+XLKit.m */; };
 		0F4D8F4D1B833CEC0031E38F /* XLCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4D8F4A1B833CEC0031E38F /* XLCoreDataManager.m */; };
+		D56EBFA91B835DEB00D73F4F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D56EBFA71B835DEB00D73F4F /* Model.xcdatamodeld */; };
+		D56EBFAC1B835E4D00D73F4F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D56EBFAB1B835E4D00D73F4F /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		0F4D8F481B833CEC0031E38F /* NSManagedObject+XLKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+XLKit.m"; sourceTree = "<group>"; };
 		0F4D8F491B833CEC0031E38F /* XLCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCoreDataManager.h; sourceTree = "<group>"; };
 		0F4D8F4A1B833CEC0031E38F /* XLCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCoreDataManager.m; sourceTree = "<group>"; };
+		D56EBFA81B835DEB00D73F4F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D56EBFAA1B835E4D00D73F4F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D56EBFAB1B835E4D00D73F4F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,9 @@
 		0F4D8EF11B833C860031E38F = {
 			isa = PBXGroup;
 			children = (
+				D56EBFAA1B835E4D00D73F4F /* Person.h */,
+				D56EBFAB1B835E4D00D73F4F /* Person.m */,
+				D56EBFA71B835DEB00D73F4F /* Model.xcdatamodeld */,
 				0F4D8F231B833C930031E38F /* CoreData.framework */,
 				0F4D8EFC1B833C860031E38F /* XLCoreDataManager */,
 				0F4D8F161B833C860031E38F /* XLCoreDataManagerTests */,
@@ -256,7 +264,9 @@
 			files = (
 				0F4D8F4D1B833CEC0031E38F /* XLCoreDataManager.m in Sources */,
 				0F4D8F4C1B833CEC0031E38F /* NSManagedObject+XLKit.m in Sources */,
+				D56EBFAC1B835E4D00D73F4F /* Person.m in Sources */,
 				0F4D8F4B1B833CEC0031E38F /* NSManagedObject+XLfind.m in Sources */,
+				D56EBFA91B835DEB00D73F4F /* Model.xcdatamodeld in Sources */,
 				0F4D8F061B833C860031E38F /* ViewController.m in Sources */,
 				0F4D8F031B833C860031E38F /* AppDelegate.m in Sources */,
 				0F4D8F001B833C860031E38F /* main.m in Sources */,
@@ -454,6 +464,7 @@
 				0F4D8F1F1B833C860031E38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F4D8F201B833C860031E38F /* Build configuration list for PBXNativeTarget "XLCoreDataManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -462,8 +473,22 @@
 				0F4D8F221B833C860031E38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D56EBFA71B835DEB00D73F4F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D56EBFA81B835DEB00D73F4F /* Model.xcdatamodel */,
+			);
+			currentVersion = D56EBFA81B835DEB00D73F4F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0F4D8EF21B833C860031E38F /* Project object */;
 }

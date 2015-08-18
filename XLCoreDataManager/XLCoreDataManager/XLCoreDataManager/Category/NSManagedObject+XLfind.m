@@ -53,9 +53,9 @@
     return [self findBySearChRequest:fetchRequest];
 }
 
-+ (NSArray*)findByPredicateFormat:(NSString*)predicateFormat
++ (NSArray*)findByPredicate:(NSPredicate*)predicate;
 {
-    NSFetchRequest * fetchRequest = [self createFetchRequestByPredicateFormat:predicateFormat];
+    NSFetchRequest * fetchRequest = [self createFetchRequestByPredicate:predicate];
     return [self findBySearChRequest:fetchRequest];
 }
 

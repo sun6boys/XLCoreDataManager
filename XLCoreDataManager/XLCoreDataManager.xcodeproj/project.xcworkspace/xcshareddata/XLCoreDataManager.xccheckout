@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6F3C1FB8-13C1-426B-9E58-5482FB2A5056</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>XLCoreDataManager</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>149C51B9A7776F50E122243BE11E378DA555199A</key>
 		<string>https://github.com/sun6boys/XLCoreDataManager.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>XLCoreDataManager/XLCoreDataManager.xcodeproj/project.xcworkspace</string>
+	<string>XLCoreDataManager/XLCoreDataManager.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>149C51B9A7776F50E122243BE11E378DA555199A</key>

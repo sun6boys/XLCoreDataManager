@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "XLCoreDataManager.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [XLCoreDataManager setupCoreDataStackWithStoreNamed:@"test.sqlite"];
     return YES;
 }
 

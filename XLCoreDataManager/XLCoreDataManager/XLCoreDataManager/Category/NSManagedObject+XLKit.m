@@ -44,11 +44,11 @@
     return fetchRequest;
 }
 
-+(NSFetchRequest*)createFetchRequestByPredicateFormat:(NSString*)predicateFormat
++(NSFetchRequest*)createFetchRequestByPredicate:(NSPredicate*)predicate
 {
-     NSFetchRequest * fetchRequest = [self createFetchRequest];
-     [fetchRequest setPredicate:[NSPredicate predicateWithFormat:predicateFormat]];
-     return fetchRequest;
+    NSFetchRequest * fetchRequest = [self createFetchRequest];
+    [fetchRequest setPredicate:predicate];
+    return fetchRequest;
 }
 
 @end
