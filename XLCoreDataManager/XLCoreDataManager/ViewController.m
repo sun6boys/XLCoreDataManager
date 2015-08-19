@@ -103,6 +103,7 @@
 }
 
 #pragma mark ------update-------
+
 - (void)update
 {
     Person * p = [Person findFirstByAttribute:@"name" withValue:@"刘金林"];
@@ -117,6 +118,7 @@
 }
 
 #pragma mark -------delete----
+//删除
 -(void)delete{
      Person * p = [Person findFirstByAttribute:@"name" withValue:@"任红尘"];
      BOOL success =  [p deleteEntity];
