@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createData];
-    [self findAll];
+//    [self findAll];
 //    [self findByAge];
-//    [self findByDepareMent];
+    [self findByCustomPredicate];
 //    [self findByAge];
 //    [self findWithNameByAgeSort];
 //    [self update];
@@ -71,11 +71,13 @@
     }
 }
 
-//根据部门来查询
--(void)findByDepareMent
+//根据自定义查询条件查询
+-(void)findByCustomPredicate
 {
-    //    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"department IN %@", @[@"财务", @"研发"]];
-    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"departMent like %@",@"财务"];
+//    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"departMent = %@",@"财务"];
+//    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"age BETWEEN {25,28}"];
+    NSPredicate *peopleFilter = [NSPredicate predicateWithFormat:@"departMent IN {'财务','研发'}"];
+    
     NSArray * arr = [Person findByPredicate:peopleFilter];
     for (Person * p in arr) {
         NSLog(@"name = %@, age = %@, sex = %@, depar = %@",p.name,p.age,p.sex,p.departMent);
