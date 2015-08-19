@@ -117,7 +117,7 @@
 #pragma mark -------delete----
 -(void)delete{
      Person * p = [Person findFirstByAttribute:@"name" withValue:@"任红尘"];
-    BOOL success =  [p deleteEntity];
+     BOOL success =  [p deleteEntity];
      NSLog(@"是否成功 %d",success);
 }
 @end
